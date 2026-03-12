@@ -1,0 +1,62 @@
+:root {
+  --c-bg: #ffffff;
+  --c-text: rgba(2, 6, 23, 0.92);
+  --c-muted: rgba(2, 6, 23, 0.56);
+
+  --c-accent-1: #6366f1;
+  --c-accent-2: #22d3ee;
+  --c-accent-3: #ec4899;
+
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+    'Microsoft YaHei', Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 全局重置：确保内容横向铺满屏幕，并使用浏览器原生滚动（不做滚动条样式定制） */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--c-bg);
+  color: var(--c-text);
+  overflow: hidden;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.24);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
